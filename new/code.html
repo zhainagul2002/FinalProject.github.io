@@ -1,10 +1,21 @@
-{% extends 'html.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-U-Compatible" content="ie=edge">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@600&family=Open+Sans:wght@700&family=Raleway:wght@700&family=Trispace:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
-{% block title %}
-The main page
-{% endblock %}
+	<meta name="description" content="Universities KR">
 
-{% block body %}
+	<title>Uni-KR</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
 
 	<!--SPRITE-->
 	<svg style="display: none;">
@@ -42,7 +53,7 @@ The main page
 	<header class="header" id="header">
 		<div class="container">
 			<div class="header_inner">
-				<img class="header_logo" src="{{ url_for('static', filename='images/hat.png') }}" alt="">
+				<img class="header_logo" src="images/icons/hat.png" alt="">
 
 				<nav class="nav" id="nav">
 					<a class="nav_link" href="#" data-scroll="#home">Home</a>
@@ -99,7 +110,7 @@ The main page
 
 		<div class="popular">
 			<div class="popular_item popular_item--border">
-				<img class="popular_icon" src="{{ url_for('static', filename='images/aiu.jpg') }}" alt="">
+				<img class="popular_icon" src="images/logo/aiu.jpg" alt="">
 				<a class="popular_link" href="http://alatoo.edu.kg/view/public/main/home.xhtml;jsessionid=jkECVu4ORhnS1CqjiqEskWYnpipsLDNExhvG6K6H.unknown-host">
 					<h4 class="popular_title">Ala-Too</h4>
 				</a>
@@ -107,7 +118,7 @@ The main page
 			</div>
 
 			<div class="popular_item popular_item--border">
-				<img class="popular_icon" src="{{ url_for('static', filename='images/auca.jpg') }}" alt="">
+				<img class="popular_icon" src="images/logo/auca.jpg" alt="">
 				<a class="popular_link" href="https://www.auca.kg/">
 					<h4 class="popular_title">AUCA</h4>
 				</a>
@@ -115,7 +126,7 @@ The main page
 			</div>
 
 			<div class="popular_item popular_item--border">
-				<img class="popular_icon" src="{{ url_for('static', filename='images/manas.jpg') }}" alt="">
+				<img class="popular_icon" src="images/logo/manas.jpg" alt="">
 				<a class="popular_link" href="http://intl.manas.edu.kg/en">
 					<h4 class="popular_title">MANAS</h4>
 				</a>
@@ -123,7 +134,7 @@ The main page
 			</div>
 
 			<div class="popular_item">
-				<img class="popular_icon" src="{{ url_for('static', filename='images/uca.jpg') }}" alt="">
+				<img class="popular_icon" src="images/logo/uca.jpg" alt="">
 				<a class="popular_link" href="https://www.ucentralasia.org/">
 					<h4 class="popular_title">UCA</h4>
 				</a>
@@ -131,7 +142,7 @@ The main page
 			</div>
 
 			<div class="popular_item">
-				<img class="popular_icon" src="{{ url_for('static', filename='images/kgma.jpg') }}" alt="">
+				<img class="popular_icon" src="images/logo/kgma.jpg" alt="">
 				<a class="popular_link" href="https://www.kgma.kg/en">
 					<h4 class="popular_title">KGMA</h4>
 				</a>
@@ -139,7 +150,7 @@ The main page
 			</div>
 
 			<div class="popular_item">
-				<img class="popular_icon" src="{{ url_for('static', filename='images/slavic.jpg') }}" alt="">
+				<img class="popular_icon" src="images/logo/slavic.jpg" alt="">
 				<a class="popular_link" href="https://krsu.org/">
 					<h4 class="popular_title">KRSU</h4>
 				</a>
@@ -152,7 +163,7 @@ The main page
 	<!--FACULTIES-->
 	<div class="faculties" id="faculties">
 		<div class="faculties_item">
-			<img class="faculties_img" src="{{ url_for('static', filename='images/1.jpg') }}" alt="">
+			<img class="faculties_img" src="images/faculties/1.jpg" alt="">
 			<div class="faculties_content">
 				<a class="faculties_link" href="https://www.google.com/search?rlz=1C1GCEA_enKG916KG916&q=engineering+universities+in+bishkek&npsic=0&rflfq=1&rldoc=1&rlha=0&rllag=42856529,74642756,3143&tbm=lcl&sa=X&ved=2ahUKEwjcka_-m-TsAhXjk4sKHX6yBDYQjGp6BAgLEFk&biw=1366&bih=657#rlfi=hd:;si:;mv:[[42.8866848,74.6877907],[42.8063356,74.56366179999999]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2" alt="">
 					<div class="faculties_title">Faculty of</div>
@@ -162,7 +173,7 @@ The main page
 		</div> <!--/FACULTIES_ITEM-->
 
 		<div class="faculties_item">
-			<img class="faculties_img" src="{{ url_for('static', filename='images/2.jpg') }}" alt="">
+			<img class="faculties_img" src="images/faculties/2.jpg" alt="">
 			<div class="faculties_content">
 				<a class="faculties_link" href="https://www.google.com/search?rlz=1C1GCEA_enKG916KG916&biw=1366&bih=657&tbm=lcl&ei=Ai-gX6fgMcKJrwT6jKb4Dg&q=communication%20universities%20in%20kyrgyzstan&oq=communication+universities+in+kyrgyzstan&gs_l=psy-ab.3...76454.81481.0.82316.24.18.0.0.0.0.479.3118.0j1j5j4j1.11.0....0...1c.1.64.psy-ab..16.2.603...0i7i30k1.0.mjNTkW7zcZ4&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2&rlst=f#rlfi=hd:;si:;mv:[[43.0214303,76.0746623],[40.8076084,72.8310733]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2" alt="">
 					<div class="faculties_title">Faculty of</div>
@@ -172,7 +183,7 @@ The main page
 		</div> <!--/FACULTIES_ITEM-->
 
 		<div class="faculties_item">
-			<img class="faculties_img" src="{{ url_for('static', filename='images/3.jpg') }}" alt="">
+			<img class="faculties_img" src="images/faculties/3.jpg" alt="">
 			<div class="faculties_content">
 				<a class="faculties_link" href="https://www.google.com/search?rlz=1C1GCEA_enKG916KG916&biw=1366&bih=657&tbm=lcl&ei=cy-gX4-KIaaorgTsppeYCw&q=humanities+universities+in+kyrgyzstan&oq=humanities+universities+in+kyrgyzstan&gs_l=psy-ab.3...118887.122742.0.123092.23.16.0.0.0.0.411.2584.0j5j5j0j1.11.0....0...1c.1.64.psy-ab..17.1.410...0i7i30k1.0.OQ3pTcWnHe0#rlfi=hd:;si:;mv:[[43.0214303,76.1138593],[40.8076084,72.8288546]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2" alt="">
 					<div class="faculties_title">Faculty of</div>
@@ -182,7 +193,7 @@ The main page
 		</div> <!--/FACULTIES_ITEM-->
 
 		<div class="faculties_item">
-			<img class="faculties_img" src="{{ url_for('static', filename='images/4.jpg') }}" alt="">
+			<img class="faculties_img" src="images/faculties/4.jpg" alt="">
 			<div class="faculties_content">
 				<a class="faculties_link" href="https://www.google.com/search?rlz=1C1GCEA_enKG916KG916&biw=1366&bih=657&tbm=lcl&ei=8i-gX6a3FO-prgTp3JaQBA&q=economics+and+management+universities+in+kyrgyzstan&oq=economics+and+management+universities+in+kyrgyzstan&gs_l=psy-ab.3...138614.160870.0.161906.34.29.0.0.0.0.373.3615.0j2j12j1.15.0....0...1c.1.64.psy-ab..20.2.442...0i7i30k1.0.ylV9nC5O1RU#rlfi=hd:;si:8813715146644325573;mv:[[42.881804777319026,74.59619051525026],[42.88144482268097,74.59569928474973]]" alt="">
 					<div class="faculties_title">Faculty of</div>
@@ -192,7 +203,7 @@ The main page
 		</div> <!--/FACULTIES_ITEM-->
 
 		<div class="faculties_item">
-			<img class="faculties_img" src="{{ url_for('static', filename='images/5.jpg') }}" alt="">
+			<img class="faculties_img" src="images/faculties/5.jpg" alt="">
 			<div class="faculties_content">
 				<a class="faculties_link" href="https://www.google.com/search?rlz=1C1GCEA_enKG916KG916&biw=1366&bih=657&tbm=lcl&ei=ljCgX67EMeTGrgTH5I3ADA&q=science+universities+in+kyrgyzstan&oq=science+universities+in+kyrgyzstan&gs_l=psy-ab.3...45744.49380.0.51702.31.15.0.0.0.0.394.2267.0j3j6j1.10.0....0...1c.1.64.psy-ab..25.2.666...33i10k1j0i7i30k1.0.N-m8RspBSXU#rlfi=hd:;si:;mv:[[43.0214303,74.9594603],[40.8076084,72.8941979]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2" alt="">
 					<div class="faculties_title">Faculty of</div>
@@ -202,7 +213,7 @@ The main page
 		</div> <!--/FACULTIES_ITEM-->
 
 		<div class="faculties_item">
-			<img class="faculties_img" src="{{ url_for('static', filename='images/6.jpg') }}" alt="">
+			<img class="faculties_img" src="images/faculties/6.jpg" alt="">
 			<div class="faculties_content">
 				<a class="faculties_link" href="https://www.google.com/search?rlz=1C1GCEA_enKG916KG916&biw=1366&bih=657&tbm=lcl&ei=CTGgX8L_DK3prgT4speoAQ&q=fine+arts+university+in+kyrgyzstan&oq=fine+arts+university+in+kyrgyzstan&gs_l=psy-ab.3...3059.7347.0.7970.11.11.0.0.0.0.738.1156.0j1j1j6-1.3.0....0...1c.1.64.psy-ab..8.2.962...33i10k1.0.IAgk6nPu8jM#rlfi=hd:;si:;mv:[[42.882816,74.6307818],[42.806554600000005,74.5668888]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2" alt="">
 					<div class="faculties_title">Faculty of</div>
@@ -212,7 +223,7 @@ The main page
 		</div> <!--/FACULTIES_ITEM-->
 
 		<div class="faculties_item">
-			<img class="faculties_img" src="{{ url_for('static', filename='images/7.jpg') }}" alt="">
+			<img class="faculties_img" src="images/faculties/7.jpg" alt="">
 			<div class="faculties_content">
 				<a class="faculties_link" href="https://www.google.com/search?rlz=1C1GCEA_enKG916KG916&biw=1366&bih=657&tbm=lcl&ei=EjGgX7yEG72jjgbCwL34Bg&q=agriculture+university+in+kyrgyzstan&oq=agriculture+university+in+kyrgyzstan&gs_l=psy-ab.3...28092.37786.0.38009.20.16.0.0.0.0.280.2066.0j5j5.10.0....0...1c.1.64.psy-ab..10.2.465...0i7i30k1j0i8i7i30k1j0i7i5i30k1.0.Nq-m57QBwnA#rlfi=hd:;si:7078501923864074851;mv:[[42.85209217731902,74.6053516970551],[42.85173222268096,74.60486070294489]]" alt="">
 					<div class="faculties_title">Faculty of</div>
@@ -222,7 +233,7 @@ The main page
 		</div> <!--/FACULTIES_ITEM-->
 
 		<div class="faculties_item">
-			<img class="faculties_img" src="{{ url_for('static', filename='images/8.jpg') }}" alt="">
+			<img class="faculties_img" src="images/faculties/8.jpg" alt="">
 			<div class="faculties_content">
 				<a class="faculties_link" href="https://www.google.com/search?rlz=1C1GCEA_enKG916KG916&biw=1366&bih=657&tbm=lcl&ei=OjGgX6OzDeCHwPAP0IWYmAE&q=medicine+university+in+kyrgyzstan&oq=medicine+university+in+kyrgyzstan&gs_l=psy-ab.3...23966.28331.0.28690.19.14.0.0.0.0.262.2053.0j1j8.9.0....0...1c.1.64.psy-ab..10.5.1126...0i7i30k1j0i8i7i30k1j0i7i5i30k1.0.H-hCaDe_R-s#rlfi=hd:;si:;mv:[[43.0478516,74.98339469999999],[40.3440042,72.6489783]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2" alt="">
 					<div class="faculties_title">Faculty of</div>
@@ -244,7 +255,7 @@ The main page
 	<!--REGIONS-->
 	<div class="regions" id="regions">
 		<div class="regions_item regions_item--border">
-			<img class="regions_icon" src="{{ url_for('static', filename='images/icon.png') }}">
+			<img class="regions_icon" src="images/icons/icon.png">
 			<a class="regions_link" href="https://university24k.com/en/c/KG/bishkek" alt="">
 				<div class="regions_title">All</div>
 			</a>
@@ -252,7 +263,7 @@ The main page
 		</div>
 
 		<div class="regions_item regions_item--border">
-			<img class="regions_icon" src="{{ url_for('static', filename='images/icon.png') }}">
+			<img class="regions_icon" src="images/icons/icon.png">
 			<a class="regions_link" href="https://www.unipage.net/en/universities/bishkek" alt="">
 				<div class="regions_title">Bishkek</div>
 			</a>
@@ -260,7 +271,7 @@ The main page
 		</div>
 
 		<div class="regions_item regions_item--border">
-			<img class="regions_icon" src="{{ url_for('static', filename='images/icon.png') }}">
+			<img class="regions_icon" src="images/icons/icon.png">
 			<a class="regions_link" href="https://www.4icu.org/kg/osh/a-z/" alt="">
 				<div class="regions_title">Osh</div>
 			</a>
@@ -268,7 +279,7 @@ The main page
 		</div>
 
 		<div class="regions_item regions_item--border">
-			<img class="regions_icon" src="{{ url_for('static', filename='images/icon.png') }}">
+			<img class="regions_icon" src="images/icons/icon.png">
 			<a class="regions_link" href="https://www.universitiesintheworld.com/universities-in-kyrgyzstan/s-universities-in-jalal-abad/" alt="">
 				<div class="regions_title">Zhalal-Abad</div>
 			</a>
@@ -276,7 +287,7 @@ The main page
 		</div>
 
 		<div class="regions_item">
-			<img class="regions_icon" src="{{ url_for('static', filename='images/icon.png') }}">
+			<img class="regions_icon" src="images/icons/icon.png">
 			<a class="regions_link" href="https://www.universitiesintheworld.com/universities-in-kyrgyzstan/s-universities-in-ysyk-kol/" alt="">
 				<div class="regions_title">Ysyk-Kol</div>
 			</a>
@@ -284,7 +295,7 @@ The main page
 		</div>
 
 		<div class="regions_item">
-			<img class="regions_icon" src="{{ url_for('static', filename='images/icon.png') }}">
+			<img class="regions_icon" src="images/icons/icon.png">
 			<a class="regions_link" href="https://www.unipage.net/en/universities/talas" alt="">
 				<div class="regions_title">Talas</div>
 			</a>
@@ -292,7 +303,7 @@ The main page
 		</div>
 
 		<div class="regions_item">
-			<img class="regions_icon" src="{{ url_for('static', filename='images/icon.png') }}">
+			<img class="regions_icon" src="images/icons/icon.png">
 			<a class="regions_link" href="https://www.universitiesintheworld.com/universities-in-kyrgyzstan/universities-in-naryn/" alt="">
 				<div class="regions_title">Naryn</div>
 			</a>
@@ -300,7 +311,7 @@ The main page
 		</div>
 
 		<div class="regions_item">
-			<img class="regions_icon" src="{{ url_for('static', filename='images/icon.png') }}">
+			<img class="regions_icon" src="images/icons/icon.png">
 			<a class="regions_link" href="https://www.universitiesintheworld.com/universities-in-kyrgyzstan/s-universities-in-batken/" alt="">
 				<div class="regions_title">Batken</div>
 			</a>
@@ -310,6 +321,7 @@ The main page
 
 	</div> <!--/CONTAINER-->
 	</section>
+
 	<!--ABOUT-->
 	<div class=" section section_gray">
 		<div class="container">
@@ -319,7 +331,7 @@ The main page
 
 					<div>
 						<div class="about_item">
-							<img class="about_img" src="{{ url_for('static', filename='images/logo.png') }}" alt="">
+							<img class="about_img" src="images/icons/logo.png" alt="">
 							<div class="about_title">About The Site</div>
 							<div class="about_text">1. This site was created in order to help to high school graduates with admission to educational institutions in Kyrgyzstan.</div>
 						</div>
@@ -327,7 +339,7 @@ The main page
 
 				    <div>
 						<div class="about_item">
-							<img class="about_img" src="{{ url_for('static', filename='images/logo.png') }}" alt="">
+							<img class="about_img" src="images/icons/logo.png" alt="">
 							<div class="about_title">About The Site</div>
 							<div class="about_text">2. There is much of irrelevant information on the Internet, due to which applicants make critical mistakes in the admission process.Users of this page can avoid such kind of problems.</div>
 						</div>
@@ -335,7 +347,7 @@ The main page
 
 					<div>
 						<div class="about_item">
-							<img class="about_img" src="{{ url_for('static', filename='images/logo.png') }}" alt="">
+							<img class="about_img" src="images/icons/logo.png" alt="">
 							<div class="about_title">About The Site</div>
 							<div class="about_text">3. With the help of this page you will not waste your time searching for retrieval of information and avoid taking unnecessary steps.</div>
 						</div>
@@ -343,7 +355,7 @@ The main page
 
 					<div>
 						<div class="about_item">
-							<img class="about_img" src="{{ url_for('static', filename='images/logo.png') }}" alt="">
+							<img class="about_img" src="images/icons/logo.png" alt="">
 							<div class="about_title">Popular</div>
 							<div class="about_text">4. With the help of a  section "POPULAR" you can search the most popular universities in KR.
 							In order to find more information about that university click to the universities name.</div>
@@ -352,7 +364,7 @@ The main page
 
 					<div>
 						<div class="about_item">
-							<img class="about_img" src="{{ url_for('static', filename='images/logo.png') }}" alt="">
+							<img class="about_img" src="images/icons/logo.png" alt="">
 							<div class="about_title">Faculties</div>
 							<div class="about_text">5. With the help of a  section "Faculties" you can search universities with that major of study.
 							In order to find the list of universities with this faculty click to the majors name.</div>
@@ -361,7 +373,7 @@ The main page
 
 					<div>
 						<div class="about_item">
-							<img class="about_img" src="{{ url_for('static', filename='images/logo.png') }}" alt="">
+							<img class="about_img" src="images/icons/logo.png" alt="">
 							<div class="about_title">Regions</div>
 							<div class="about_text">6. With the help of a  section "Regions" you can search universities according to their location.
 							In order to find the list of universities in that region click to the name of that region.</div>
@@ -384,7 +396,7 @@ The main page
 			<!--USERS-->
 			<div class="users">
 					<div class="users_item">
-						<img class="users_img" src="{{ url_for('static', filename='images/janara.jpg') }}" alt="">
+						<img class="users_img" src="images/users/janara.jpg" alt="">
 						<div class="users_content">
 							<div class="users_name">Zhanara Tolkunova</div>
 							<div class="users_prof">Student</div>
@@ -397,7 +409,7 @@ The main page
 					</div> <!--/USERS_ITEM-->
 
 					<div class="users_item">
-						<img class="users_img" src="{{ url_for('static', filename='images/nursultan.jpg') }}" alt="">
+						<img class="users_img" src="images/users/nursultan.jpg" alt="">
 						<div class="users_content">
 							<div class="users_name">Nursultan Sagynbaev</div>
 							<div class="users_prof">Student</div>
@@ -410,7 +422,7 @@ The main page
 					</div> <!--/USERS_ITEM-->
 
 					<div class="users_item">
-						<img class="users_img" src="{{ url_for('static', filename='images/nuriza.jpg') }}" alt="">
+						<img class="users_img" src="images/users/nuriza.jpg" alt="">
 						<div class="users_content">
 							<div class="users_name">Nuriza Paishan k</div>
 							<div class="users_prof">Student</div>
@@ -425,7 +437,7 @@ The main page
 					</div> <!--/USERS_ITEM-->
 
 					<div class="users_item">
-						<img class="users_img" src="{{ url_for('static', filename='images/asel.jpg') }}" alt="">
+						<img class="users_img" src="images/users/asel.jpg" alt="">
 						<div class="users_content">
 							<div class="users_name">Asel Musaeva</div>
 							<div class="users_prof">Chemistry Teacher</div>
@@ -439,7 +451,7 @@ The main page
 					</div> <!--/USERS_ITEM-->
 
 					<div class="users_item">
-						<img class="users_img" src="{{ url_for('static', filename='images/maksat.jpg') }}" alt="">
+						<img class="users_img" src="images/users/maksat.jpg" alt="">
 						<div class="users_content">
 							<div class="users_name">Dyikanbaev Maksat</div>
 							<div class="users_prof">Student</div>
@@ -452,7 +464,7 @@ The main page
 					</div> <!--/USERS_ITEM-->
 
 					<div class="users_item">
-						<img class="users_img" src="{{ url_for('static', filename='images/sezim.jpg') }}" alt="">
+						<img class="users_img" src="images/users/sezim.jpg" alt="">
 						<div class="users_content">
 							<div class="users_name">Sezim Tokozhan k</div>
 							<div class="users_prof">Student</div>
@@ -479,7 +491,7 @@ The main page
 			<div class="download_text">
 				<p>Good Luck! Download Important Documents List Required for Admissions in University!</p>
 			</div>
-			<a class="button button--long button--red" href="{{ url_for('static', filename='list.docx') }}">Download Here</a>
+			<a class="button button--long button--red" href="list.docx">Download Here</a>
 		</div> <!--/CONTAINER-->
 	</div> <!--/DOWNLOAD-->
 
@@ -537,5 +549,7 @@ The main page
 <!--JAVASCRIPT-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>			
-<script src="{{ url_for('static', filename='app.js') }}"></script>
-{% endblock %}
+<script src="app.js"></script>
+
+</body>
+</html>
